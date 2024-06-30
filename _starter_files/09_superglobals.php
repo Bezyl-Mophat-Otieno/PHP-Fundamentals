@@ -16,3 +16,14 @@
   $_REQUEST - Contains information about variables passed through the form or URL.
 */
 
+// print_r ($GLOBALS);
+
+$keys_in_server_object = array_keys($_SERVER);
+
+// print_r($keys_in_server_object)
+print_r($_GET['name']);
+print_r($_GET['age']);
+?>
+
+
+<a href="<?php echo $_SERVER['PHP_SELF']; ?>?name=JOHN&age=30"> Click Me</a>
